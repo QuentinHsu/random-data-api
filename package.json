@@ -2,13 +2,16 @@
   "name": "random-data-api",
   "scripts": {
     "dev": "wrangler dev src/index.ts",
-    "deploy": "wrangler deploy --minify src/index.ts"
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "hono": "^4.6.1"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^3.6.0",
     "@cloudflare/workers-types": "^4.20240529.0",
+    "eslint": "^9.10.0",
     "wrangler": "^3.57.2"
   }
 }
